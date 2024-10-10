@@ -1,27 +1,5 @@
 @media (max-width : 1000px){
-  .navbar{
-    height : 300px;
-    flex-wrap: wrap;
-  }
-  .logo{
-    position: fixed;
-    left : 0;
-  }
-  .navoptions ul{
-    display: grid;
-    justify-content: space-evenly;
-    list-style: none;
-    margin-right: 100px;
-    gap : 15px;
-    text-align: center;
-  }
-  #option-nav{
-    position: absolute;
-    left : 180px;
-  }
-  .navicons{
-    margin-left: 100px;
-  }
+  
   .first-secondportion{
     display: inline-block;
  } 
@@ -38,12 +16,11 @@
   height : 450px;
  
 }
-.main-img .img{
-   position: relative;
-   left : 200px;
-   height: 400px;
-   width: 400px;
-}
+   .main-img{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+   }
 .cart-p{
   display: grid;
   justify-content: center;
@@ -59,40 +36,10 @@
 }
 }
 @media (max-width : 720px){
-  .navbar{
-    height : 500px;
-    flex-wrap: wrap;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  .logo{
-    position: relative;
-    left : 94px;
-  }
-  .navoptions ul{
-    display: grid;
-    justify-content: space-evenly;
-    list-style: none;
-    margin-right: 100px;
-    gap : 25px;
-    text-align: center;
-  }
-  #option-nav{
-    position: relative;
-    left : 20px;
-  }
-  .navicons{
-    margin-left: 100px;
-  }
   .slider{
     display: none;
    }
   
-  .search-icon{
-    margin-right: 60px;
-  }
   #order-btn{
    
     display: flex;
@@ -100,14 +47,6 @@
     align-items: center;
     margin-left: 5vmin;
   }
-  .main-img .img{
-     margin-top: 10px;
-     position: relative;
-     left : 150px;
-     height: 200px;
-     width: 200px;
-  }
- 
 }
 
 
@@ -129,16 +68,10 @@
     height: 8rem;
     width: 8rem;
   }
+  
 }
 
-@media (max-width: 480px) {
-  .search-icon{
- position: relative;
- right : 80px;
-  }
-  .navoptions ul {
-    padding-left: 0;
-  }
+@media (max-width: 500px) {
   .content1{
     text-align: center;
     margin-right: 10vmin;;
@@ -146,11 +79,15 @@
   .head{
     margin-right: 10vmin;
   }
-  .main-img{
-    height : 650px;
-    width : 50%;
-    position: relative;
-    right : 40px;
+  
+ .main-img{
+  width: 100%;
+  text-align: center;
+  position: relative;
+  top : 200px;
+ }
+ #cake-index-img{
+  height: 300px;
  }
   #order-btn{
     height : 10vmin;
@@ -161,11 +98,7 @@
     left : 120px;
 
   }
-  .navbar{
-    /* background-color: blue; */
-    margin-bottom: 50vmin;
-
-  }
+  
   .slider-ramp {
     height: 60vh;
   }
@@ -195,5 +128,42 @@
 .input-box{
   margin-bottom: 50vmin;
 }
+
+}
+
+@media (max-width : 900px){
+  .navbar{
+    height : 500px;
+    display: grid;
+  }
+  #logo-nav{
+    margin-left: 30vmin;
+    height: 150px;
+    width: 150px;
+  }
+  .nav-icons{
+    margin-left: 30vmin;
+    display: flex;
+    gap : 10vmin;
+  }
+}
+@media (max-width : 400px){
+  .navbar{
+    padding:  20px;
+  }
+  .icons{
+    position: relative;
+    right: 50px;
+  font-size: 50px;
+}
+.logo{
+ position: relative;
+ right: 50px;
+}
+.nav-options ul{
+  display: grid;
+  margin-bottom: 2vmin;
+}
+
 
 }

@@ -14,10 +14,15 @@
   <link rel="stylesheet" href="mobile.css">
 </head>
 <body>
-  <div class="firstpage">
-    <div class="navbar">
-      <div class="logo"></div>
-      <div class="navoptions">
+  <div class="navbar">
+
+    <div class="nav-logo">
+      <div class="logo">
+        <img src="images/bakerylogo1.png" id="logo-nav">
+      </div>
+    </div>
+
+    <div class="nav-options">
         <ul>
           <li><a class="home" href="index.html">HOME</a></li>
           <li><a  class="login"href="login.html">LOGIN</a></li>
@@ -26,18 +31,22 @@
             <option>PARTIES CAKE</option>
             <option>WEDDING CAKE</option>
             <option>WEDDING CAKE</option>
-
           </select></li>
-          <li><a  class="gallery" href="gallery.html">GALLERY</a></li>
+          <li><a  class="gallery" href="galery.html">GALLERY</a></li>
           <li><a class="sale" href="products.html">PRODUCTS</a></li>
-
         </ul>
+    </div>
+ 
+    <div class="nav-icons">
+      <div class="search-icon">
+        <i class="fa-solid fa-magnifying-glass search-icon icons"></i>
       </div>
-      <div class="navicons">
-        <i class="fa-solid fa-magnifying-glass search-icon"></i>
-        <i class="fa-solid fa-cart-arrow-down cart-icon"></i>
+      <div class="cart-icon">
+        <i class="fa-solid fa-cart-arrow-down cart-icon icons"></i>
+      </div>
     </div>
-    </div>
+  
+  </div>
     <div class="first-secondportion">
     <div class="content">
       <input type="text" class = "input hide" placeholder="Enter the page for Search">
@@ -50,7 +59,7 @@
       <button id="order-btn">ORDER NOW</button>
     </div>
     <div class="main-img">
-      <div class="img"></div>
+      <div class="img"><img src="images/finalcake.png" id="cake-index-img"></div>
     </div>
     <div class="cart-p">
     <div class="cart hide">

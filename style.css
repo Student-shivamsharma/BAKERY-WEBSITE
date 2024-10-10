@@ -14,92 +14,115 @@ body{
   background-color: black;
   color : white;
 }
-.navbar{
-  background-color: black;
-  height : 20vmin;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  border-bottom: 5px;
-  border-bottom : 5px solid #FF0000;
-  flex-wrap: wrap;
-  position: sticky;
-  left : 0;
-  width : 100%;
+
+html , body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
-.logo{
-  background-image: url("images/bakerylogo1.png");
-  background-size: cover;
-  width : 15vmin;
-  height : 15vmin;
-}
-.navoptions{
-  font-weight: bolder;
-  font-size: 1.3rem;
-}
-.navoptions ul{
-  display: flex;
-  justify-content: space-evenly;
-  list-style: none;
-}
-.navoptions ul li{
- margin-left: 6vmin;
- position: relative;
- cursor: pointer;
-}
+    .shop{
+      background-color: red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      background-color: black;
+    }
+    .box-shop{
+      height : 450px;
+      width : 450px;
+      border: 2px solid black;
+      background-color : red;
+      margin: 3vmin;
+      flex-grow: 1;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50px;
+    }
+    .heading{
+      margin : 4vmin;
+    }
+    .box-shop-text{
+      text-align: center;
+      margin-top: 2vmin;
+      margin-bottom: 2vmin;
+      font-size: 2rem;
+    }
+    .box-shop-text2{
+      text-align: center;
+      font-size: 2rem;
+    }
+    .box-shop-img{
+      height: 35vmin;
+      width: 35vmin;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       padding: 2vmin;
+    }
+    .image1{
+     height: 100%;
+      width: 100%; 
+    }
+
+
+    /* <navbar> */
+      .navbar{
+        border: 2px solid black;
+        background-color: black;
+        height : 200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 50px 0px 50px;
+        color : white;
+        border-bottom: 5px solid red;
+      }
+      #logo-nav{
+        height: 20vmin;
+        width: 20vmin;
+      }
+      .nav-options ul{
+        display: flex;
+        gap : 10vmin;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-decoration: none;
+      }
+      .nav-options ul li{
+        flex-grow: 1;
+        list-style: none;
+        font-size: 1.3rem;
+        font-weight: bolder;
+      }
+      
+      .nav-options ul a{
+        text-decoration: none;
+        color : white;
+        transition: 2s ease-in-out 0s;
+       }
+      .nav-options ul a:hover{
+        text-decoration: underline;
+        text-decoration-thickness: 8px;
+        text-decoration-color: red;
+       }
+      
+      .nav-icons{
+        display: flex;
+        gap : 5vmin;
+      }
+      .icons{
+        font-size: 5vmin;
+      }
+
 #cup{
   color : red;
   text-shadow: 4px 2px 2px red;
 }
-.navoptions ul a{
-  text-decoration: none;
-  color : white;
-  transition: 2s ease-in-out 0s;
-}
-.navoptions ul a:active{
-  color: red;
-}
-.navoptions ul a:hover{
-  text-decoration-line: underline;
-  text-decoration-color: red;
-  text-decoration-thickness:10px;
-}
-.navicons{
-  display: flex;
-}
 
-
-.search-icon{
-  font-size : 3rem;
-  margin-right: 5vmin;
-  color : white;
-  transition: 3s ease-out 0s;
-}
-.search-icon:hover{
-  color : red;
-  text-shadow: 3px 3px 3px red;
-  border : 3px solid white;
-  padding: 3px;
-}
-.cart-icon{
-  font-size: 3rem;
-  color : white;
-  transition: 3s ease-out 0s;
-}
-.cart-icon:hover{
-  color : red;
-  text-shadow: 3px 3px 3px red;
-  border : 3px solid white;
-  padding: 3px;
-}
-#option-nav{
-  font-size : 1.3rem;
-  background: transparent;
-  color : white;
-  font-weight: bolder;
-  border: none;
-  background-color: red;
-}
  
   .first-secondportion{
    height : 100%; 
@@ -147,19 +170,18 @@ body{
 }
 
 .main-img{
-   height : 550px;
+   height : 40vmin;
    width : 50%;
    display: flex;
    justify-content: center;
    align-items: center;
 }
 .main-img .img{
-  background-image: url("images/finalcake.png");
-  background-size: cover;
   width : 400px;
   height :400px;
   animation: moveimg 20s ease-in-out 0s infinite normal;
   border: none;
+  margin-top: 20vmin;
 }
 @keyframes moveimg{
   from{
@@ -198,11 +220,8 @@ body{
   left : 180px;
   margin : 50px;
 }
-#order-btn:hover{
-    padding: 0px 30vmin 0px 30vmin;
-}
+
 .cart div{
-  /* margin-bottom: 1vmin; */
   text-align: center;
   font-weight: bolder;
 }
@@ -254,14 +273,13 @@ body{
 #textreg{
   text-align: center;
   color : white;
-  font-size: 4rem;
+  font-size: 3rem;
   text-shadow: 5px 5px 5px white;
   margin: 5vmin;
 }
 .regform{
-  height : 80vh;
+  height : 70vh;
   background-color: black;
-
 
 }
 .input-box{
@@ -275,7 +293,6 @@ body{
 }
 .inputlogin{
   width : 70vmin;
- /* width : 200px; */
  flex-grow: 1;
  background: transparent;
  padding: 3vmin;
@@ -316,4 +333,77 @@ label{
   color : black;
   box-shadow: 10px 4px 4px #f70776;
  }
- 
+ #option-nav{
+  background-color: red;
+  height: 6vmin;
+  width : 25vmin;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 1rem;
+  border-radius: 2vmin;
+ }
+
+ .slider-ramp{
+  height : 90vh;
+  max-width: 100vh;
+  margin: auto;
+  width : 100%;
+     position: relative;
+     bottom : 390px;
+     
+ }
+ .slider{
+  height : 50rem;
+  width : 50rem;
+  border : 7rem solid red;
+  border-radius: 50%;
+  display: flex;
+  transition: rotate 1s ;
+  box-shadow: 10px 5px 5px red;
+  /* animation: slide 3s ease-in-out 0s infinite normal; */
+ }
+ @keyframes slide{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+ }
+ .slide img{
+   height : 15rem;
+   position: relative;
+ }
+ #cake1{
+  position: relative;
+  left : 180px;
+  top : 480px;
+ }
+ #cake2{
+  position: relative;
+  left : 250px;
+  top : 150px;
+ }
+ #cake3{
+  position: relative;
+  right: 650px;
+  top : 150px;
+ }
+ #cake4{
+  position: relative;
+  right: 550px;
+  bottom : 150px;
+ }
+
+ .images-control{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;;
+  flex-wrap: wrap;
+ }
+ .images-control img{
+  height : 10rem;
+  width : 10rem;
+  margin-left: 20px;
+  flex-grow: 1;
+ }
